@@ -1,0 +1,796 @@
+/*样式初始化*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*定义清除浮动影响*/
+
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*以下为section1的样式*/
+
+.section1{
+	background:url(../image/welcome/background01.jpg) no-repeat;
+	background-size: 100% 130%;
+	text-align: center;
+	padding-top: 200px;
+	color: #fff;
+}
+
+.section1 h1{
+	margin-bottom: 70px;
+	font-weight: normal;
+	font-size: 2px;
+}
+
+.section1 p{
+	position: relative;
+	margin-top: 800px;
+	font-size: 25px;
+	line-height: 2;
+}
+
+.section1 p i{
+	position: absolute;
+	top:39%;
+	letter-spacing: 10px;
+	font-size: 20px;
+	line-height: 10px;
+	font-style: normal;
+}
+
+.section1 p span{
+	font-size: 60px;
+	margin-right: 30px;
+}
+
+.section1 .section1-icon{
+	position: relative;
+	margin: 0 auto;
+	color: #fff;
+}
+
+.section1 .section1-icon .section1-icon1{
+	margin: 50px auto 10px;
+	padding: 3px;
+	width: 200px;
+	font-size: 20px;
+	letter-spacing: 3px;
+}
+
+.section1 .section1-icon .section1-icon2{
+	margin: 20px auto;
+	width: 30px;
+	height: 30px;
+	background:url(../image/welcome/icon01.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+/*以下为section2的样式*/
+
+.section2{
+	position: relative;
+	background:url(../image/welcome/background02.jpg) no-repeat;
+	background-size: 100% 110%;
+	padding-top: 200px;
+	overflow: hidden;
+}
+
+.section2 h1{
+	top: 250px;
+	font-size: 50px;
+	font-weight: normal;
+	text-align: center;
+	display: none;
+}
+
+.section2 p{
+	font-size: 30px;
+	text-align: center;
+	margin-top: 40px;
+	display: none;
+}
+
+.section2 h2{
+	font-size: 40px;
+	font-weight: normal;
+	font-family: "Microsoft JhengHei";
+	color: #fff;
+	position: absolute;
+	top: 45%;
+	left: 38%;
+}
+
+.section2-items .selected{
+	transform:scale(1.2,1.2);
+}
+
+.section2 .section2-item1{
+	position: absolute;
+	bottom: 500%;
+	left: 0;
+	width: 20%;
+	height: 100%;
+	background:url(../image/welcome/background02-1.jpg) no-repeat;
+	background-size: 120% 100%;
+	transition: all 1s;
+	overflow: hidden;
+}
+
+.section2 .section2-item2{
+	position: absolute;
+	top: 500%;
+	left: 20%;
+	width: 20%;
+	height: 100%;
+	background:url(../image/welcome/background02-2.jpg) no-repeat;
+	background-size: 120% 100%;
+	transition: all 1s;
+	overflow: hidden;
+}
+
+.section2 .section2-item3{
+	position: absolute;
+	bottom: 500%;
+	left: 40%;
+	width: 20%;
+	height: 100%;
+	background:url(../image/welcome/background02-3.jpg) no-repeat;
+	background-size: 120% 100%;
+	transition: all 1s;
+	overflow: hidden;
+}
+
+.section2 .section2-item4{
+	position: absolute;
+	top: 500%;
+	left: 60%;
+	width: 20%;
+	height: 100%;
+	background:url(../image/welcome/background02-4.jpg) no-repeat;
+	background-size: 120% 100%;
+	transition: all 1s;
+	overflow: hidden;
+}
+
+.section2 .section2-item5{
+	position: absolute;
+	bottom: 500%;
+	left: 80%;
+	width: 20%;
+	height: 100%;
+	background:url(../image/welcome/background02-5.jpg) no-repeat;
+	background-size: 120% 100%;
+	transition: all 1s;
+	overflow: hidden;
+}
+
+.section2 .section2-itemtext{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.8);
+	display: none;
+}
+
+.section2 .section2-itemtext p{
+	width: 80%;
+	height: 50%;
+	position: absolute;
+	top: 35%;
+	left: 5%;
+	color: #fff;
+	font-size: 15px;
+	display: block;
+	line-height: 2em;
+	border-top: 1px solid #fff;
+	padding-top: 30px;
+}
+
+/*以下为section3的样式*/
+
+.container{
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.section3{
+	overflow: hidden;
+}
+
+.section3 .show{
+	position: absolute;
+	top: 10%;
+	left: -100%;
+	width: 800px;
+	height: 500px;
+}
+
+.section3 .show .show-img{
+	overflow: hidden;
+	transition: .8s;
+}
+
+.section3 .title{
+	width: 120px;
+	position: absolute;
+	top: 5%;
+	right: -100%;
+}
+
+.section3 .section3-menu{
+	width: 140px;
+	position: absolute;
+	right: -100%;
+	top: 65%;
+	border-top: 3px solid #000;
+	padding-top: 50px;
+	text-align: center;
+}
+
+.section3 a{
+	text-decoration:none;
+	color: #000;
+	font-size: 18px;
+	line-height: 1.7em;
+	transition: all .3s;
+}
+
+.section3 a.selected{
+	font-size: 22px;
+	color: #aaa;
+	cursor: default;
+}
+
+.section3 .section3-info{
+	position: absolute;
+	top: 73%;
+	left: -100%;
+	width: 200px;
+	height: 130px;
+	line-height: 2em;
+}
+
+.section3 .section3-info a{
+	font-size: 16px;
+	text-decoration: underline;
+}
+
+.section3 .section3-info div{
+	display: none;
+}
+
+.section3-info div.selected{
+	display: block;
+}
+
+/*以下为section4的样式*/
+
+.section4 .slide1{
+	background: url(../image/welcome/background04-1.jpg);
+	position: relative;
+	overflow: hidden;
+}
+
+.section4 .slide1 .show{
+	transform: rotate(135deg);
+	transition: all 1s;
+}
+
+.section4 .slide1 .show00{
+	width: 20%;
+	height: 450px;
+	position: absolute;
+	top: 10%;
+	left: 25%;
+	padding: 50px;
+	background: #fff;
+	opacity: .8;
+	z-index: 4;
+}
+
+.section4 .slide1 .show00 p{
+	font-size: 25px;
+}
+
+.section4 .slide1 .title{
+	width: 80px;
+}
+
+.section4 .slide1 .title-info0{
+	position: absolute;
+	top: 80%;
+	left: 30%;
+	display: none;
+}
+
+.section4 .slide1 .title-info1{
+	position: absolute;
+	top: 80%;
+	left: 20%;
+	display: none;
+}
+
+.section4 .slide1 .title-info2{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	display: none;
+}
+
+.section4 .slide1 .title-info3{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	display: none;
+}
+
+.section4 .slide1 .show01{
+	position: absolute;
+	top: 3%;
+	left: 40%;
+	opacity: .8;
+	z-index: 1;
+	filter: grayscale(100%);
+}
+
+.section4 .slide1 .show01:hover .showitem01-1{
+	display: block;
+}
+
+.section4 .slide1 .show01 .showitem01{
+	width: 50%;
+}
+
+.section4 .slide1 .show01 .showitem01-1{
+	width: 50%;
+	position: absolute;
+	top: 0;
+	transition: all 1s;
+	display: none;
+}
+
+.section4 .slide1 .show02{
+	width: 25%;
+	position: absolute;
+	top: 40%;
+	left: 10%;
+	filter: grayscale(100%);
+	z-index: 2;
+}
+
+.section4 .slide1 .show02 img{
+	width: 100%;
+}
+
+.section4 .slide1 .show03{
+	position: absolute;
+	top: 40%;
+	left: 45%;
+	opacity: .8;
+	z-index: 3;
+	filter: grayscale(100%);
+}
+
+.section4 .slide1 .show03 img{
+	width: 80%;
+}
+
+.section4 .slide1 .active{
+	z-index: 10;
+	opacity: 1;
+	filter: none;
+}
+
+.section4 .slide2{
+	background: url(../image/welcome/background04-2.jpg);
+	position: relative;
+}
+
+/*slide2——4  公共内容区域*/
+.section4 .slidetext-container{
+	width: 230px;
+	height: 270px;
+	position: absolute;
+	top: 10%;
+	left: -200%;
+	padding: 30px;
+	background: #fff;
+	color: #333;
+	transition: all 1.5s;
+}
+
+.section4 .slidetext-container h2{
+	font-weight: normal;
+	line-height: 2em;
+	margin-bottom: 30px;
+}
+
+.section4 .slidetext-container ul{
+	margin-left: 30px;
+}
+
+.section4 .slidetext-container ul li{
+	font-size: 17px;
+	line-height: 2em;
+}
+
+.section4 .slidetext-container .slide2-text{
+	display: none;
+}
+
+.section4 .slidetext-container .slide3-text{
+	display: none;
+}
+
+.section4 .slidetext-container .slide4-text{
+	display: none;
+}
+
+.section4 .slidetext-container p{
+	border-top: 2px solid #333;
+	text-align: center;
+	margin-top: 20px;
+	padding-top: 20px;
+	cursor: pointer;
+}
+
+/*slide2——4  公共内容区域结束*/
+
+/*slide2图片区域*/
+.section4 .slide2 .slide2-imgs .group1{
+	display: none;
+}
+
+.section4 .slide2 .slide2-imgs .group1 img{
+	width: 20%;
+	opacity: .7;
+	transition: all 1s;
+}
+
+.section4 .slide2 .slide2-imgs .group1 .item1{
+	position: absolute;
+	left: 78%;
+	top: 10%;
+	transform: rotate(3deg);
+}
+
+.section4 .slide2 .slide2-imgs .group1 .item2{
+	position: absolute;
+	left: 60%;
+	top: 40%;
+}
+
+.section4 .slide2 .slide2-imgs .group1 .item3{
+	position: absolute;
+	left: 27%;
+	top: 35%;
+	transform: rotate(5deg);
+	z-index: 1;
+}
+
+.section4 .slide2 .slide2-imgs .group1 .item4{
+	position: absolute;
+	left: 44%;
+	top: 5%;
+	transform: rotate(-4deg);
+	z-index: 2;
+}
+
+.section4 .slide2 .slide2-imgs .group2{
+	display: none;
+}
+
+.section4 .slide2 .slide2-imgs .group2 img{
+	width: 20%;
+	opacity: .8;
+	transition: all 1s;
+}
+
+.section4 .slide2 .slide2-imgs .group2 .item1{
+	position: absolute;
+	left: 73%;
+	top: 10%;
+	transform: rotate(3deg);
+}
+
+.section4 .slide2 .slide2-imgs .group2 .item2{
+	position: absolute;
+	left: 53%;
+	top: 10%;
+	transform: rotate(-5deg);
+}
+
+.section4 .slide2 .slide2-imgs .group2 .item3{
+	position: absolute;
+	left: 32%;
+	top: 20%;
+	transform: rotate(5deg);
+}
+
+.section4 .slide2 .slide2-imgs .group1 img.active,
+.section4 .slide2 .slide2-imgs .group2 img.active{
+	opacity: 1;
+	transform: scale(1.1,1.1);
+	z-index: 10;
+}
+
+/*slide2图片区域结束*/
+
+/*slide3图片区域*/
+.section4 .slide3{
+	background: url(../image/welcome/background04-3.jpg);
+}
+
+.section4 .slide3 .slide3-imgs img{
+	opacity: .8;
+	transition: all 1s;
+}
+
+.section4 .slide3 .slide3-imgs .group1{
+	display: none;
+}
+
+.section4 .slide3 .slide3-imgs .group1 img{
+	width: 6%;
+}
+
+.section4 .slide3 .slide3-imgs .group1 .item1{
+	position: absolute;
+	left: 58.5%;
+	top: 1%;
+}
+
+.section4 .slide3 .slide3-imgs .group1 .item2{
+	position: absolute;
+	left: 53%;
+	top: 14%;
+}
+
+.section4 .slide3 .slide3-imgs .group2{
+	display: none;
+}
+
+.section4 .slide3 .slide3-imgs .group2 img{
+	width: 6%;
+}
+
+.section4 .slide3 .slide3-imgs .group2 .item1{
+	position: absolute;
+	left: 53%;
+	top: 10%;
+}
+
+.section4 .slide3 .slide3-imgs .group2 .item2{
+	position: absolute;
+	left: 60%;
+	top: 15%;
+}
+
+.section4 .slide3 .slide3-imgs .group3{
+	display: none;
+}
+
+.section4 .slide3 .slide3-imgs .group3 .item1{
+	width: 9%;
+	position: absolute;
+	left: 58%;
+	top: 47%;
+}
+
+.section4 .slide3 .slide3-imgs .group3 .item2{
+	width: 5%;
+	position: absolute;
+	left: 52%;
+	top: 5%;
+}
+
+.section4 .slide3 .slide3-imgs .group4 img{
+	width: 7%;
+}
+
+.section4 .slide3 .slide3-imgs .group4{
+	display: none;
+}
+
+.section4 .slide3 .slide3-imgs .group4 .item1{
+	position: absolute;
+	left: 58%;
+	top: 15%;
+}
+
+.section4 .slide3 .slide3-imgs .group4 .item2{
+	position: absolute;
+	left: 52%;
+	top: 5%;
+}
+
+.section4 .slide3 .slide3-imgs img.active{
+	opacity: 1;
+	transform: scale(1.1,1.1);
+	z-index: 10;
+}
+
+/*slide23图片区域结束*/
+
+/*slide4图片区域*/
+.section4 .slide4{
+	background: url(../image/welcome/background04-4.jpg);
+}
+
+.section4 .slide4 .slide4-imgs img{
+	opacity: .8;
+	transition: all 1s;
+}
+
+.section4 .slide4 .slide4-imgs .group1{
+	display: none;
+}
+
+.section4 .slide4 .slide4-imgs .group1 img{
+	width: 6%;
+}
+
+.section4 .slide4 .slide4-imgs .group1 .item1{
+	position: absolute;
+	left: 75.5%;
+	top: 5%;
+}
+
+.section4 .slide4 .slide4-imgs .group1 .item2{
+	position: absolute;
+	left: 77%;
+	top: 14%;
+}
+
+.section4 .slide4 .slide4-imgs .group1 .item3{
+	position: absolute;
+	left: 84%;
+	top: 5%;
+}
+
+.section4 .slide4 .slide4-imgs .group1 .item4{
+	position: absolute;
+	left: 85.5%;
+	top: 14%;
+}
+
+.section4 .slide4 .slide4-imgs .group2{
+	display: none;
+}
+
+.section4 .slide4 .slide4-imgs .group2 .item1{
+	width: 7%;
+	position: absolute;
+	left: 78%;
+	top: 2%;
+}
+
+.section4 .slide4 .slide4-imgs .group2 .item2{
+	width: 7%;
+	position: absolute;
+	left: 80%;
+	top: 7%;
+}
+
+.section4 .slide4 .slide4-imgs .group2 .item3{
+	width: 7%;
+	position: absolute;
+	left: 82%;
+	top: 12%;
+}
+
+.section4 .slide4 .slide4-imgs .group3 img{
+	width: 7%;
+}
+
+.section4 .slide4 .slide4-imgs .group3{
+	display: none;
+}
+
+.section4 .slide4 .slide4-imgs .group3 .item1{
+	position: absolute;
+	left: 78%;
+	top: 12%;
+}
+
+.section4 .slide4 .slide4-imgs .group3 .item2{
+	position: absolute;
+	left: 81%;
+	top: 7%;
+}
+
+.section4 .slide4 .slide4-imgs .group3 .item3{
+	position: absolute;
+	left: 84%;
+	top: 2%;
+}
+
+.section4 .slide4 .slide4-imgs img.active{
+	opacity: 1;
+	transform: scale(1.1,1.1);
+	z-index: 10;
+}
+
+/*slide4图片区域结束*/
+
+/*以下为section5的样式*/
+
+.section5 .contact{
+	float: left;
+	width: 66.6%;
+	height: 100%;
+	background:url(../image/welcome/contact-back.jpg) no-repeat;
+	background-size: 100% 100%;
+	color: #fff;
+	text-align: center;
+}
+
+.section5 .contact .contact-text{
+	margin-left: -300px;
+}
+
+.section5 .contact h1{
+	font-weight: 400;
+	margin-top: 15%;
+	line-height: 2em;
+	font-size: 40px;
+}
+
+.section5 .contact p{
+	font-size: 20px;
+}
+
+.section5 .contact p span{
+	background-color: #fff;
+}
+
+.section5 .contact img{
+	width: 700px;
+	margin: 90px -300px 0 0;
+	cursor: pointer;
+}
+
+.section5 .contact img:hover{
+	border-bottom: 1px solid #fff;
+}
+
+.section5 .contact-info{
+	float: right;
+	width: 33.3%;
+	height: 100%;
+	background:url(../image/welcome/contact-back.gif);
+	box-shadow: 5px 0 10px #aaa inset;
+}
+
+.section5 .contact-info .info{
+	text-align: center;
+	margin-top: 200px;
+	display: none;
+}
+
+.section5 .contact-info .info p{
+	font-size: 20px;
+	color: #555;
+	line-height: 3em;
+}
+
+.section5 .contact-info .info p span{
+	margin-right: 15px;
+}
+
+.section5 .contact-info .info p a{
+	color: #555;
+	text-decoration: none;
+}
+
+.section5 .contact-info .info p a:hover{
+	text-decoration: underline;
+}
